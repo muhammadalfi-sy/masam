@@ -179,7 +179,12 @@ $('document').ready(function(){
 				$("p:nth-child(50)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
 				});
-				
+				<script type="text/javascript">
+					var myImage = new Image(300, 300);
+					myImage.src = 'lop.jpeg';
+					x = document.getElementById("gambar");
+					x.appendChild(myImage);	
+				</script>
 			}
 			else{
 				msgLoop(i);
