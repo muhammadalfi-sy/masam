@@ -154,12 +154,12 @@ $('document').ready(function(){
 		$('#b22').animate({top:240, left: vw-250},500);
 		$('#b33').animate({top:240, left: vw-150},500);
 		$('#b44').animate({top:240, left: vw-50},500);
-		$('#b55').animate({top:240, left: vw+50},500);
-		$('#b66').animate({top:240, left: vw+150},500);
-		$('#b77').animate({top:240, left: vw+250},500);
+		$('#b55').animate({top:240, left: vw+100},500);
+		$('#b66').animate({top:240, left: vw+200},500);
+		$('#b77').animate({top:240, left: vw+300},500);
 		$('.balloons').css('opacity','0.9');
-		$('.balloons h2').fadeIn(3000);
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
+		$('.balloons h2').fadeIn(4000);
+		$(this).fadeOut('slow').delay(4000).promise().done(function(){
 			$('#story').fadeIn('slow');
 		});
 	});
@@ -173,11 +173,11 @@ $('document').ready(function(){
 		var i;
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(1200).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-			if(i==50){
-				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
+			$("p:nth-child("+i+")").fadeIn('slow').delay(2100);
+			if(i==51){
+				$("p:nth-child(50)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
 				});
 				
